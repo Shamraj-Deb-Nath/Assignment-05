@@ -14,8 +14,7 @@
                 padding: 0;
                 box-sizing: border-box;
             }
-    
-            .font-poppins{
+        .font-poppins{
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -28,20 +27,32 @@
           <div class="flex items-center gap-2">
             <img src="assets/logo.png" alt="logo">
             <span class="text-2xl">Dev<span class="font-bold">Board</span></span>
-          </div>
-      
+          </div>  
           <div class="flex items-center gap-4">
             <div class="flex items-center bg-[#F4F7FF] rounded-full gap-2 px-3">
               <img src="assets/checkbox.png" alt="checkbox">
               <span class="text-xl font-bold">23</span>
-            </div>
-      
+            </div>      
             <div class="bg-[#F4F7FF] rounded-full p-2 cursor-pointer">
               <img src="assets/theme-btn.png" alt="theme-btn">
             </div>
           </div>
         </nav>
       </header>
+
+      <main class="container mx-auto max-w-screen-xl mt-2 flex justify-between h-auto w-full">
+        <div class="left-part bg-white rounded-md p-2 min-w-[70%] max-w-[70%]">
+          <div class="topbar flex justify-between items-center border-b-2 border-dashed bg-[#F4F7FF]">
+            <div class="flex flex-wrap justify-around items-center w-[25%] bg-[#F4F7FF] rounded-md p-4">
+              <img class="bg-white rounded-full p-2" src="assets/checkbox.png" alt="checkbox">
+            </div>
+            <div class="text-center"> 
+              <p class="">Task Assigned</p>
+              <p class="text-[30px] font-bold Task">06</p>
+            </div>
+          </div>
+        </div>
+      </main>
       
 </body>
 </html>
