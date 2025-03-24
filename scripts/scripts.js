@@ -109,4 +109,35 @@ document.querySelector('.clear-btn').addEventListener('click', () => {
 });
 
 
+//Color
+const colors = [
+  'red',
+  'blue',
+  'green',
+  'yellow',
+  'orange',
+  'purple',
+  'brown',
+  'gray',
+  'black',
+  'white'
+];
+
+let index = 0;
+
+function getNextColor() {
+  let color = colors[index];
+  index++;
+  if (index >= colors.length) {
+    index = 0;
+  }
+
+  return color;
+}
+
+// Change Theme Color on Click
+document.querySelector('.theme').addEventListener('click', () => {
+  document.body.style.backgroundColor = getNextColor();
+});
+
 
