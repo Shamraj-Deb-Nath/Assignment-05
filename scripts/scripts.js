@@ -20,7 +20,6 @@ if (dateElement) {
   dateElement.textContent = fullDate;
 }
 
-
 // Function to count active tasks
 function active_task() {
   var total = 0; 
@@ -33,7 +32,6 @@ function active_task() {
       total = total + 1;
     }
   }
-
   if (buttons.length == cards.length) {
     return total;
   } else {
@@ -85,15 +83,14 @@ buttons.forEach(button => {
   activityBox.appendChild(log);
   });
 });
-// Clear history and reset everything
-document.querySelector('.clear-btn').addEventListener('click', () => {
+   // Clear history and reset everything
+   document.querySelector('.clear-btn').addEventListener('click', () => {
   
   // Clear the activity log
-  let activityBox = document.querySelector('.activity');
-  activityBox.innerHTML = '';
-
-  let buttons = document.querySelectorAll('.btn');
-  buttons.forEach(button => {
+    let activityBox = document.querySelector('.activity');
+    activityBox.innerHTML = '';
+    let buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
     button.disabled = false; 
     button.style.backgroundColor = ''; 
     button.classList.add('hover:bg-[#03179b]'); 
@@ -105,7 +102,7 @@ document.querySelector('.clear-btn').addEventListener('click', () => {
   taskElement.textContent = totalTask < 10 ? '0' + totalTask : totalTask;
 
   let doneElement = document.querySelector('.done-task');
-  doneElement.textContent = '0';
+  doneElement.textContent = '23';
 });
 
 
@@ -124,14 +121,12 @@ const colors = [
 ];
 
 let index = 0;
-
 function getNextColor() {
   let color = colors[index];
   index++;
   if (index >= colors.length) {
     index = 0;
   }
-
   return color;
 }
 
